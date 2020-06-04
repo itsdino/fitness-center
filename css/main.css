@@ -184,7 +184,7 @@
     bottom: 0;
     right: 0;
     z-index: -2;
-    background: url("../img/header.webp") no-repeat 0 35%/cover; }
+    background: url("../img/hero-img.jpg") no-repeat 0 35%/cover; }
     #header-main .header-img:after {
       content: "";
       background: #fff;
@@ -236,7 +236,7 @@
       background: url("../img/center/home.jpg") center center/cover; }
 
 #header-inner {
-  background: url("../img/header.webp") no-repeat 20% 30%/cover;
+  background: url("../img/hero-img.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #005a99; }
 
@@ -1046,19 +1046,25 @@ img {
       display: none; } }
 
 @media screen and (max-width: 479.98px) {
+  .section-banner {
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 100%; }
   .course-time-wrapper {
     text-align: left; }
   .py-3 {
-    padding: 2rem 0; }
+    padding: 3rem 0; }
   .section-title {
     text-align: center;
     font-size: 2rem; }
   .section-subtitle {
     text-align: center;
-    font-size: 1.7rem; }
+    font-size: 1.5rem; }
   .content-title {
     text-align: left;
-    font-size: 1.4rem; }
+    font-size: 1.3rem; }
   .content-description {
     font-size: 1rem;
     text-align: left;
@@ -1118,6 +1124,10 @@ img {
       border-bottom: none; }
   #home-features .specials {
     grid-gap: 1.5rem; }
+    #home-features .specials div {
+      border-radius: 25px; }
+      #home-features .specials div:hover {
+        transform: none; }
   #home-selfdefense .specials div {
     padding: 1.5rem; }
   #home-team .specials {

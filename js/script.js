@@ -13,10 +13,10 @@ const menuItems = document.querySelectorAll(".menu-item");
 const menuBtn = document.getElementById("menu-btn");
 
 // for desktop navbar
-const navbar = document.getElementById("navbar");
-const logo = document.querySelector(".logo");
-const menuLinks = document.querySelectorAll("#navbar ul li a");
-let menuLinksLength = menuLinks.length;
+const navBarConst = document.getElementById("navbar");
+const logoConst = document.querySelector(".logo");
+const menuLinksConst = document.querySelectorAll("#navbar ul li a");
+let menuLinksLength = menuLinksConst.length;
 
 // mobile
 // ------
@@ -50,20 +50,20 @@ const navBarSizeHandler = () => {
 
 // shrinks desktop navbar, adds shadow
 const shrinkNavbar = () => {
-  navbar.classList.remove("top");
-  logo.classList.add("shrinked");
+  navBarConst.classList.remove("top");
+  logoConst.classList.add("shrinked");
   for (let i = 0; i < menuLinksLength; i++) {
-    menuLinks[i].classList.add("shrinked");
+    menuLinksConst[i].classList.add("shrinked");
   }
   console.log("shrink");
 };
 
 // resets default hero navbar, no shadow
 const heroNavbar = () => {
-  navbar.classList.add("top");
-  logo.classList.remove("shrinked");
+  navBarConst.classList.add("top");
+  logoConst.classList.remove("shrinked");
   for (let i = 0; i < menuLinksLength; i++) {
-    menuLinks[i].classList.remove("shrinked");
+    menuLinksConst[i].classList.remove("shrinked");
   }
   console.log("hero");
 };
@@ -77,25 +77,25 @@ const menuItemHighlightHandler = () => {
     if (active) {
       active.classList.remove("active");
     }
-    menuLinks[0].classList.add("active");
+    menuLinksConst[0].classList.add("active");
   } else if (scrollPosition >= 1478 && scrollPosition < 3216) {
     let active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
     }
-    menuLinks[1].classList.add("active");
+    menuLinksConst[1].classList.add("active");
   } else if (scrollPosition >= 3216 && scrollPosition < 4217) {
     let active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
     }
-    menuLinks[2].classList.add("active");
+    menuLinksConst[2].classList.add("active");
   } else if (scrollPosition >= 4217 && scrollPosition < 5117) {
     let active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
     }
-    menuLinks[3].classList.add("active");
+    menuLinksConst[3].classList.add("active");
   }
   console.log(scrollPosition);
 };
