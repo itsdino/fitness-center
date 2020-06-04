@@ -197,11 +197,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    grid-template-columns: 1fr; }
+    height: 700px; }
     #header-main .header-wrapper .header-content {
-      padding: 1rem;
-      position: relative;
       text-align: center;
       color: #005a99;
       box-sizing: border-box;
@@ -229,16 +226,6 @@
           opacity: 0.5;
           color: #e01983;
           border-radius: 50%; }
-    #header-main .header-wrapper .image {
-      height: 100%;
-      width: 100%;
-      background-size: 300px;
-      background: url("../img/center/home.jpg") center center/cover; }
-
-#header-inner {
-  background: url("../img/hero-img.jpg") no-repeat 20% 30%/cover;
-  height: 5.5rem;
-  border-bottom: 3px solid #005a99; }
 
 .btn-main, .btn-light, .btn-dark, .btn-cta, .btn-external {
   display: inline-block;
@@ -1069,28 +1056,33 @@ img {
     font-size: 1rem;
     text-align: left;
     margin-bottom: 0; }
-  #header-home {
-    height: 70vh;
-    border-bottom: 3px solid #005a99;
-    background-position: 20% 30%; }
-    #header-home .header-wrapper .header-content {
-      text-align: center;
-      line-height: 1.2; }
-      #header-home .header-wrapper .header-content h1 {
-        text-align: left;
-        font-size: 6.6rem;
-        width: 100%;
-        line-height: 0.8; }
-      #header-home .header-wrapper .header-content p {
-        text-align: center;
-        font-size: 2.4rem;
-        margin-bottom: 1rem; }
-    #header-home .header-overlay {
-      transform: rotate(0) translateY(-60vh);
-      border-radius: 0; }
-  #header-inner {
-    height: 10rem;
-    border-bottom: 3px solid #005a99; }
+  #header-main {
+    height: 100vh; }
+    #header-main .header-img {
+      background-position: 50% 35%; }
+    #header-main .header-wrapper {
+      margin-top: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; }
+      #header-main .header-wrapper .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 0 60px 0;
+        height: 100%;
+        width: 100%; }
+        #header-main .header-wrapper .header-content h1 {
+          margin-top: 26%;
+          text-align: left;
+          font-size: 4rem;
+          line-height: 1; }
+        #header-main .header-wrapper .header-content .header-line {
+          display: none; }
+        #header-main .header-wrapper .header-content p {
+          font-size: 2rem; }
+        #header-main .header-wrapper .header-contentmiddot {
+          display: none; }
   #home-features .specials,
   #home-fitness .specials,
   #home-wellness .specials,
@@ -1145,58 +1137,10 @@ img {
     grid-gap: 2.5rem; }
     #home-prices .pricegrid #grid-placeholder {
       display: none; }
-  #home-a .specials div {
-    border-bottom: 1px solid #f4f4f4;
-    padding-bottom: 1rem; }
-    #home-a .specials div:last-child {
-      border: none;
-      padding-bottom: 0; }
-  #home-b .stats div {
-    padding: 2rem 0 1rem 0; }
-  #about-a .about-info {
-    grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3"; }
-  #about-c {
-    display: none; }
-  #contact-a .text-fields {
-    grid-template-areas: "name" "subject" "email" "phone" "message"; }
-  #contact-b div {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #555; }
-    #contact-b div:last-child {
-      border: none;
-      margin-bottom: 0;
-      padding-bottom: 0; }
-  #contact-c h1 {
-    font-size: 2rem; }
   #main-footer .footer-content {
     flex-direction: column;
     padding: 1rem;
     height: 10rem; } }
-
-@media (max-width: 500px) {
-  #header-home {
-    height: 70vh;
-    border-bottom: 3px solid #005a99;
-    background-position: 20% 30%; }
-    #header-home .header-content {
-      padding-top: 4.2rem;
-      text-align: center;
-      line-height: 1.2; }
-      #header-home .header-content h1 {
-        font-size: 3.6rem;
-        width: 100%;
-        line-height: 0.8; }
-      #header-home .header-content p {
-        text-align: center;
-        font-size: 1.2rem;
-        margin-bottom: 1rem; }
-    #header-home .header-overlay {
-      transform: rotate(0) translateY(-60vh);
-      border-radius: 0; }
-  #header-inner {
-    height: 10rem;
-    border-bottom: 3px solid #005a99; } }
 
 @media (max-height: 580px) {
   #header-home .header-content {
