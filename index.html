@@ -17,11 +17,10 @@
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/main.css" />
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-      crossorigin="anonymous"
-      defer
-    ></script>
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous">
+    </script>
     <script src="js/lax.min.js" defer></script>
     <script src="js/script.js" defer></script>
     <script src="js/lightbox.min.js" defer></script>
@@ -669,6 +668,23 @@
           <i class="fab fa-facebook fa-3x"></i>
         </div>
       </div>
-    </footer>   
+    </footer> 
+
+    <script>
+    $('#navbar ul li a').on('click', function(e){
+    if (this.hash !== ''){
+      e.preventDefault();
+
+      const hash = this.hash;
+
+      $('html, body').animate(
+        {
+          scrollTop: $(hash).offset().top - 48,
+        },
+        450
+      );
+    }
+  });
+    </script>
   </body>
 </html>

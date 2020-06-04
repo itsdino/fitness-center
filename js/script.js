@@ -99,3 +99,5 @@ const menuItemHighlightHandler = () => {
   }
   console.log(scrollPosition);
 };
+
+// jquery smooth scroll to element

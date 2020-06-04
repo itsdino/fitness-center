@@ -456,9 +456,6 @@ input[class^="btn"]:hover {
   max-width: 25%;
   padding: 0 4px; }
 
-html {
-  scroll-behavior: smooth; }
-
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -619,25 +616,18 @@ html {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   html {
-    overflow: hidden;
-    height: 100%; }
+    overflow: hidden; }
   body {
-    overflow: auto;
-    height: 100%; } }
+    overflow: auto; } }
 
 * {
   margin: 0;
   padding: 0; }
 
-html {
-  scroll-behavior: smooth;
-  height: 100%; }
-
 body {
   color: #333;
   font-family: "Jost", "Arial", "Helvetica", sans-serif;
-  line-height: 1.6;
-  height: 100%; }
+  line-height: 1.6; }
 
 main {
   background: #fff;
