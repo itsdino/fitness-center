@@ -870,7 +870,7 @@ img {
           border-color: #fff;
           background: #fff; }
 
-@media screen and (max-width: 1025px) and (min-height: 767.98px) {
+@media screen and (max-width: 1025px) {
   .section-banner {
     background-attachment: scroll;
     background-position: 20% 0;
@@ -1012,7 +1012,7 @@ img {
       margin: 0 auto; }
   #home-prices .pricegrid {
     grid-template-columns: 1fr;
-    grid-gap: 2.5rem;
+    grid-gap: 3.1rem;
     margin-bottom: 1.8rem; }
     #home-prices .pricegrid #grid-placeholder {
       display: none; }
@@ -1040,11 +1040,12 @@ img {
       #main-footer .footer-content .info .placeholder {
         display: none; }
     #main-footer .footer-content .social {
+      display: block;
       width: 100%;
       padding-top: 1rem;
       text-align: center; } }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) and (max-width: 900px) {
   .container {
     max-width: 600px;
     padding: 0 1rem;
@@ -1052,7 +1053,7 @@ img {
     overflow: hidden; }
   .section-banner {
     background-attachment: scroll;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     height: 15rem;
     width: 100%; }
@@ -1107,7 +1108,26 @@ img {
       display: none; }
     #home-prices .pricegrid:nth-of-type(4) {
       padding-bottom: 1.7rem;
-      grid-template-rows: 1fr; } }
+      grid-template-rows: 1fr; }
+  #main-footer .footer-content {
+    align-items: flex-start;
+    flex-direction: column; }
+    #main-footer .footer-content .opened {
+      width: 100%;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    #main-footer .footer-content .info {
+      width: 100%;
+      text-align: left;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      #main-footer .footer-content .info .placeholder {
+        display: none; }
+    #main-footer .footer-content .social {
+      display: block;
+      width: 100%;
+      padding-top: 1rem;
+      text-align: center; } }
 
 @media screen and (max-height: 325px) and (max-width: 570px) {
   #home-prices .pricegrid {
