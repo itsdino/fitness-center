@@ -866,7 +866,7 @@ img {
           border-color: #fff;
           background: #fff; }
 
-@media screen and (max-device-width: 1025px) and (min-device-height: 767px) {
+@-webkit-media screen and (max-device-width: 1025px) and (min-device-height: 767px) {
   .section-banner {
     background-attachment: scroll;
     background-position: 20% 0;
@@ -907,7 +907,7 @@ img {
   #home-contact .contact-info p {
     font-size: 1rem; } }
 
-@media screen and (max-device-height: 450px) {
+@-webkit-media screen and (max-device-height: 450px) {
   .container {
     max-width: 600px;
     padding: 0 1rem;
@@ -937,7 +937,7 @@ img {
     text-align: left;
     margin-bottom: 0; }
   #header-main {
-    height: 50vh; }
+    height: 100vh; }
     #header-main .header-wrapper {
       margin-top: 0;
       justify-content: center;
@@ -1040,7 +1040,7 @@ img {
       padding-top: 1rem;
       text-align: center; } }
 
-@media screen and (max-device-height: 325px) {
+@-webkit-media screen and (max-device-height: 325px) {
   #header-main {
     height: 100vh; }
     #header-main .header-wrapper {
@@ -1072,7 +1072,7 @@ img {
   #home-prices .pricegrid {
     grid-template-columns: 1fr; } }
 
-@media screen and (max-device-width: 430px) and (max-device-height: 900px) {
+@-webkit-media screen and (max-device-width: 430px) and (max-device-height: 900px) {
   .container {
     padding: 0 1rem; }
   .section-banner {
