@@ -75,7 +75,6 @@ const heroNavbar = () => {
 // adds active class to menu item
 const menuItemHighlightHandler = () => {
   let scrollPosition = window.scrollY;
-  //home
   if (scrollPosition < 1329) {
     let active = document.querySelector(".active");
     if (active) {
@@ -114,7 +113,10 @@ const menuItemHighlightHandler = () => {
     menuLinksConst[5].classList.add("active");
   }
   // contact menu item highlighter
-  if (window.innerHeight + scrollPosition >= document.body.offsetHeight - 2) {
+  if (
+    scrollPosition > 7715 ||
+    window.innerHeight + scrollPosition >= document.body.offsetHeight - 2
+  ) {
     let active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");

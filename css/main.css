@@ -202,22 +202,22 @@
       text-align: center;
       color: #005a99;
       box-sizing: border-box;
-      width: 75%; }
+      width: 100%; }
       #header-main .header-wrapper .header-content h1 {
         font-family: "jost", "Arial", "Helvetica", cursive;
-        font-size: calc(16px + (75 - 16) * ((100vw - 300) / (1200 - 300)));
+        font-size: 6rem;
         font-weight: bold;
         line-height: 0.7; }
       #header-main .header-wrapper .header-content .header-line {
         height: 10px;
-        width: 99%;
+        width: 50rem;
         background: #fff;
         box-shadow: 0 3px 1px rgba(0, 0, 0, 0.04), 0 4px 2px rgba(0, 0, 0, 0.04), 0 5px 4px rgba(0, 0, 0, 0.04);
         margin: 2.1rem auto;
-        opacity: 0.75;
+        opacity: 1;
         border-radius: 25px; }
       #header-main .header-wrapper .header-content p {
-        font-size: 2.99rem;
+        font-size: 3.1rem;
         color: #e01983;
         margin-top: -20px; }
         #header-main .header-wrapper .header-content p .slash {
@@ -664,41 +664,35 @@ img {
     margin-top: 3rem;
     margin-bottom: 2rem;
     display: grid;
-    grid-gap: 3rem;
+    grid-gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
-    -ms-grid-template-columns: 1fr 1fr 1fr; }
+    -ms-grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; }
     #home-features .specials div {
-      margin-bottom: auto;
       z-index: 0;
-      position: relative;
       color: #333;
       background: #fff;
-      border-radius: 25px;
-      padding: 2rem;
+      border-radius: 1rem;
       transition: all 0.2s ease-in-out;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07), 0 2px 2px rgba(0, 0, 0, 0.07), 0 4px 4px rgba(0, 0, 0, 0.07), 0 6px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07); }
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07), 0 2px 2px rgba(0, 0, 0, 0.07), 0 4px 4px rgba(0, 0, 0, 0.07), 0 6px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07);
+      display: grid;
+      padding: 1rem;
+      height: calc(100% - 2rem);
+      align-items: center;
+      justify-content: center;
+      grid-template-rows: 1fr 0.5fr 1.4fr; }
+      #home-features .specials div i {
+        color: #005a99; }
+      #home-features .specials div h3 {
+        padding: 0; }
       #home-features .specials div p {
+        margin: auto 0;
         text-align: center; }
-    #home-features .specials div::after {
-      content: "";
-      position: absolute;
-      background: yellow;
-      top: 0;
-      left: 0;
-      width: 100px;
-      height: 100px;
-      z-index: 3;
-      box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
-      opacity: 0;
-      transition: opacity 0.25s ease-in-out; }
     #home-features .specials div:hover {
       transform: translateY(-10px); }
     #home-features .specials div::after:hover {
       transform: translateY(-10px);
       opacity: 1; }
-    #home-features .specials .fas {
-      color: #005a99;
-      padding-bottom: 0.4rem; }
 
 #home-fitness {
   background: #005a99;
@@ -872,7 +866,7 @@ img {
           border-color: #fff;
           background: #fff; }
 
-@media screen and (max-device-width: 1025px) {
+@media screen and (max-device-width: 1025px) and (min-device-height: 767px) {
   .section-banner {
     background-attachment: scroll;
     background-position: 20% 0;
@@ -888,7 +882,6 @@ img {
   .content-description {
     font-size: 1rem; }
   #home-features .specials {
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.7rem; }
     #home-features .specials div {
       padding: 1rem; }
@@ -914,7 +907,174 @@ img {
   #home-contact .contact-info p {
     font-size: 1rem; } }
 
-@media screen and (max-device-width: 760px) {
+@media only screen and (max-device-height: 450px) {
+  .container {
+    max-width: 600px;
+    padding: 0 1rem;
+    margin: auto;
+    overflow: hidden; }
+  .section-banner {
+    background-attachment: scroll;
+    background-position: top;
+    background-size: cover;
+    height: 15rem;
+    width: 100%; }
+  .course-time-wrapper {
+    text-align: left; }
+  .py-3 {
+    padding: 3rem 0; }
+  .section-title {
+    text-align: center;
+    font-size: 2rem; }
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.5rem; }
+  .content-title {
+    text-align: left;
+    font-size: 1.3rem; }
+  .content-description {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0; }
+  #header-main {
+    height: 100vh; }
+    #header-main .header-wrapper {
+      margin-top: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; }
+      #header-main .header-wrapper .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 0 8% 0;
+        height: 100%;
+        width: 100%; }
+        #header-main .header-wrapper .header-content h1 {
+          text-align: center;
+          margin-top: 20vh;
+          font-size: 3.86rem;
+          line-height: 1; }
+        #header-main .header-wrapper .header-content .header-line {
+          height: 5px;
+          display: block;
+          margin: -3.5rem auto -2.2rem auto;
+          width: 87.5%; }
+        #header-main .header-wrapper .header-content p {
+          font-size: 2.035rem; }
+  #home-features .specials,
+  #home-fitness .specials,
+  #home-wellness .specials,
+  #home-selfdefense .specials,
+  #home-contact .contact-info,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    padding: 0; }
+    #home-features .specials div,
+    #home-fitness .specials div,
+    #home-wellness .specials div,
+    #home-selfdefense .specials div,
+    #home-contact .contact-info div,
+    #about-d .testimonials div,
+    #contact-b .contact-info div,
+    .items div {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0;
+      margin-bottom: 0; }
+    #home-features .specials div:last-child,
+    #home-fitness .specials div:last-child,
+    #home-wellness .specials div:last-child,
+    #home-selfdefense .specials div:last-child,
+    #home-contact .contact-info div:last-child,
+    #about-d .testimonials div:last-child,
+    #contact-b .contact-info div:last-child,
+    .items div:last-child {
+      border-bottom: none; }
+  #home-features .specials {
+    grid-gap: 1.5rem; }
+    #home-features .specials div {
+      border-radius: 25px; }
+      #home-features .specials div:hover {
+        transform: none; }
+      #home-features .specials div p {
+        font-size: 1rem; }
+  #home-selfdefense .specials div {
+    position: relative;
+    padding-bottom: 5rem; }
+    #home-selfdefense .specials div .btn-external {
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      margin: 0 auto; }
+  #home-prices .pricegrid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.1rem;
+    margin-bottom: 1.8rem; }
+    #home-prices .pricegrid #grid-placeholder {
+      display: none; }
+    #home-prices .pricegrid:nth-of-type(4) {
+      grid-template-rows: 1fr;
+      padding-bottom: 1.7rem; }
+  #main-footer .footer-content {
+    grid-template-columns: 1fr;
+    grid-template-areas: "opened" "info" "social"; }
+    #main-footer .footer-content .opened {
+      width: 100%;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    #main-footer .footer-content .info {
+      width: 100%;
+      text-align: left;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      #main-footer .footer-content .info .placeholder {
+        display: none; }
+    #main-footer .footer-content .social {
+      display: block;
+      width: 100%;
+      padding-top: 1rem;
+      text-align: center; } }
+
+@media screen and (max-device-height: 325px) {
+  #header-main {
+    height: 100vh; }
+    #header-main .header-wrapper {
+      margin-top: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; }
+      #header-main .header-wrapper .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 0 8% 0;
+        height: 100%;
+        width: 100%; }
+        #header-main .header-wrapper .header-content h1 {
+          text-align: center;
+          margin-top: 23vh;
+          font-size: 3.45rem;
+          line-height: 1; }
+        #header-main .header-wrapper .header-content .header-line {
+          height: 5px;
+          display: block;
+          margin: -4vh auto 1vh auto;
+          width: 86.5%; }
+        #header-main .header-wrapper .header-content p {
+          font-size: 1.8rem; }
+  #home-team .specials {
+    grid-template-columns: repeat(2, 1fr); }
+  #home-prices .pricegrid {
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-device-width: 430px) and (max-device-height: 900px) {
+  .container {
+    padding: 0 1rem; }
   .section-banner {
     background-attachment: scroll;
     background-position: center;
@@ -1046,91 +1206,3 @@ img {
       width: 100%;
       padding-top: 1rem;
       text-align: center; } }
-
-@media screen and (max-device-height: 450px) and (orientation: landscape) {
-  .container {
-    max-width: 600px;
-    padding: 0 1rem;
-    margin: auto;
-    overflow: hidden; }
-  .section-banner {
-    background-attachment: scroll;
-    background-position: top;
-    background-size: cover;
-    height: 15rem;
-    width: 100%; }
-  .course-time-wrapper {
-    text-align: left; }
-  .py-3 {
-    padding: 3rem 0; }
-  .section-title {
-    text-align: center;
-    font-size: 2rem; }
-  .section-subtitle {
-    text-align: center;
-    font-size: 1.5rem; }
-  .content-title {
-    text-align: left;
-    font-size: 1.3rem; }
-  .content-description {
-    font-size: 1rem;
-    text-align: left;
-    margin-bottom: 0; }
-  #header-main {
-    height: 100vh; }
-    #header-main .header-wrapper {
-      margin-top: 0;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; }
-      #header-main .header-wrapper .header-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0 0 8% 0;
-        height: 100%;
-        width: 100%; }
-        #header-main .header-wrapper .header-content h1 {
-          text-align: center;
-          margin-top: 20vh;
-          font-size: 9vw;
-          line-height: 1; }
-        #header-main .header-wrapper .header-content .header-line {
-          height: 5px;
-          display: block;
-          margin: -4vh auto -1vh auto;
-          width: 81vw; }
-        #header-main .header-wrapper .header-content p {
-          font-size: 5.04vw; }
-  #home-prices .pricegrid {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 3.2rem 1.5rem;
-    margin-bottom: 1.1rem; }
-    #home-prices .pricegrid #grid-placeholder {
-      display: none; }
-    #home-prices .pricegrid:nth-of-type(4) {
-      padding-bottom: 1.7rem;
-      grid-template-rows: 1fr; }
-  #main-footer .footer-content {
-    grid-template-columns: 1fr;
-    grid-template-areas: "opened" "info" "social"; }
-    #main-footer .footer-content .opened {
-      width: 100%;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-    #main-footer .footer-content .info {
-      width: 100%;
-      text-align: left;
-      padding: 1rem 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-      #main-footer .footer-content .info .placeholder {
-        display: none; }
-    #main-footer .footer-content .social {
-      display: block;
-      width: 100%;
-      padding-top: 1rem;
-      text-align: center; } }
-
-@media screen and (max-device-height: 325px) and (orientation: landscape) {
-  #home-prices .pricegrid {
-    grid-template-columns: 1fr; } }
