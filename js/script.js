@@ -74,52 +74,53 @@ const heroNavbar = () => {
 
 // adds active class to menu item
 const menuItemHighlightHandler = () => {
-  console.log("highlight handler");
   let scrollPosition = window.scrollY;
-  if (scrollPosition >= 0 && scrollPosition < 1478) {
+  //home
+  if (scrollPosition < 1329) {
     let active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
     }
     menuLinksConst[0].classList.add("active");
-  } else if (scrollPosition >= 1478 && scrollPosition < 3216) {
+  } else if (scrollPosition < 3156) {
     let active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
     }
     menuLinksConst[1].classList.add("active");
-  } else if (scrollPosition >= 3216 && scrollPosition < 4217) {
+  } else if (scrollPosition < 3955) {
     let active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
     }
     menuLinksConst[2].classList.add("active");
-  } else if (scrollPosition >= 4217 && scrollPosition < 4950) {
+  } else if (scrollPosition < 4887) {
     let active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
     }
     menuLinksConst[3].classList.add("active");
-  } else if (scrollPosition >= 4950 && scrollPosition < 5840) {
+  } else if (scrollPosition < 5777) {
     let active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
     }
     menuLinksConst[4].classList.add("active");
-  } else if (scrollPosition >= 5840 && scrollPosition < 7712) {
+  } else {
     let active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
     }
     menuLinksConst[5].classList.add("active");
-  } else if (scrollPosition >= 7712) {
+  }
+  // contact menu item highlighter
+  if (window.innerHeight + scrollPosition >= document.body.offsetHeight - 2) {
     let active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
     }
     menuLinksConst[6].classList.add("active");
   }
-  console.log(scrollPosition);
 };
 
 // jquery smooth scroll to element
