@@ -1046,7 +1046,7 @@ img {
       padding-top: 1rem;
       text-align: center; } }
 
-@media screen and (max-device-height: 450px) and (max-device-width: 900px) {
+@media screen and (max-device-height: 450px) and (max-device-width: 900px) and (orientation: landscape) {
   .container {
     max-width: 600px;
     padding: 0 1rem;
@@ -1130,6 +1130,6 @@ img {
       padding-top: 1rem;
       text-align: center; } }
 
-@media screen and (max-height: 325px) and (max-width: 570px) {
+@media screen and (max-device-height: 325px) and (max-device-width: 570px) and (orientation: landscape) {
   #home-prices .pricegrid {
     grid-template-columns: 1fr; } }
