@@ -23,9 +23,13 @@ let menuLinksLength = menuLinksConst.length;
 // closes mobile menu on item select
 for (let i = 0; i < menuItems.length; i++) {
   menuItems[i].addEventListener("click", () => {
-    menuBtn.checked = false;
+    setTimeout(uncheckHamburger, 150);
   });
 }
+
+var uncheckHamburger = () => {
+  menuBtn.checked = false;
+};
 
 // desktop
 // -------
