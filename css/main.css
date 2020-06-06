@@ -838,6 +838,8 @@ img {
 #main-footer {
   background: #333;
   color: #fff; }
+  #main-footer a {
+    color: white; }
   #main-footer .footer-content {
     display: flex;
     justify-content: space-between;
@@ -851,16 +853,15 @@ img {
     #main-footer .footer-content .social {
       flex: 1 1 0;
       text-align: center; }
-      #main-footer .footer-content .social a {
-        color: #fff; }
-      #main-footer .footer-content .social .fab {
+      #main-footer .footer-content .social a i {
+        color: #fff;
+        border: 1px solid transparent;
         border-radius: 50%;
-        text-align: center;
-        transition: all 0.2s; }
-        #main-footer .footer-content .social .fab:hover {
-          background: #f4f4f4;
-          color: #333;
-          border-radius: 50%; }
+        transition: all 0.25s ease-out; }
+      #main-footer .footer-content .social a:hover i {
+        color: #005a99;
+        border-color: #fff;
+        background: #fff; }
 
 @media screen and (max-width: 1025px) {
   .section-banner {
