@@ -90,14 +90,46 @@ const menuItemHighlightHandler = () => {
       active.classList.remove("active");
     }
     menuLinksConst[2].classList.add("active");
-  } else if (scrollPosition >= 4217 && scrollPosition < 5117) {
+  } else if (scrollPosition >= 4217 && scrollPosition < 4950) {
     let active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
     }
     menuLinksConst[3].classList.add("active");
+  } else if (scrollPosition >= 4950 && scrollPosition < 5840) {
+    let active = document.querySelector(".active");
+    if (active) {
+      active.classList.remove("active");
+    }
+    menuLinksConst[4].classList.add("active");
+  } else if (scrollPosition >= 5840 && scrollPosition < 7712) {
+    let active = document.querySelector(".active");
+    if (active) {
+      active.classList.remove("active");
+    }
+    menuLinksConst[5].classList.add("active");
+  } else if (scrollPosition >= 7712) {
+    let active = document.querySelector(".active");
+    if (active) {
+      active.classList.remove("active");
+    }
+    menuLinksConst[6].classList.add("active");
   }
   console.log(scrollPosition);
 };
 
 // jquery smooth scroll to element
+$("#navbar ul li a").on("click", function (e) {
+  if (this.hash !== "") {
+    e.preventDefault();
+
+    const hash = this.hash;
+
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top - 48,
+      },
+      450
+    );
+  }
+});

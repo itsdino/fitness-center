@@ -6,39 +6,18 @@
     <meta name="description" content="Informieren Sie sich über unser umfangreiches Fitness-Angebot in Mainz" />
     <meta name="keywords" content="Fitness, Rückenfit, Seniorentraining, Pilates, Spinning, Hugo Hofmann GmbH, Langhantel-Workout, Bodyfit, Zumba, Nordic Walking, Mainz, Fitnessstudio" />
     <meta name="robots" content="index" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/main.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.5.0.min.js"
-      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-      crossorigin="anonymous">
-    </script>
+    <script src="js/jquery-3.5.1.min.js" defer></script>
     <script src="js/lax.min.js" defer></script>
     <script src="js/script.js" defer></script>
-    <script src="js/lightbox.min.js" defer></script>
     
     <title>Fitness-Center Mainz City – Gesundheitsorientiertes Fitnesstrainingunter kompetenter Betreuung</title>
   </head>
   <body>
     <!-- Header -->
-    <!-- <div class="container"> -->
-
-  <!--</div> -->
     <header id="header-main" >
-      <!--
-      <button id="hamburger">
-        <div class="hamburger-lines"></div>
-        <div class="hamburger-lines-secondary"></div>
-      </button>
-      -->
       <nav class="navigation top" id="navbar"> 
         <div class="container">
           <div class="nav-container">
@@ -50,7 +29,6 @@
             <li class="menu-item"><a href="#home-fitness">Fitness</a></li>
             <li class="menu-item"><a href="#home-wellness">Wellness</a></li>
             <li class="menu-item"><a href="#home-selfdefense">Selbstverteidigung</a></li>
-            <li class="menu-item"><a href="#home-studio">Studio</a></li>
             <li class="menu-item"><a href="#home-team">Team</a></li>
             <li class="menu-item"><a href="#home-prices">Preise</a></li>
             <li class="menu-item"><a href="#home-contact">Kontakt</a></li>
@@ -61,7 +39,6 @@
       <div class="header-img lax" data-lax-translate-y="0 0, 900 200"></div>
       <div class="container">
         <div class="header-wrapper">
-        <!-- <div class="header-overlay"></div> -->
           <div class="header-content">
             <h1>einfach fitter werden</h1>
             <div class="header-line"></div>
@@ -92,7 +69,7 @@
               <h3 class="py-1">Fitness</h3>
               <p>
                 Bodybuilding, Cardio-,
-                Krafttraining, Fitness-, Individual-, Firmenkurse oder Personaltraining. <br>Sie werden fit wie ein Turnschuh!
+                Krafttraining, Fitness-, Individual-, Firmenkurse oder Personaltraining. Sie werden fit wie ein Turnschuh!
               </p>
             </div>
             <div id="wellness-card" onclick="location.href='#home-wellness';" style="cursor: pointer;">
@@ -112,7 +89,8 @@
           </div>
         </div>
       </section>
-      <!-- parallax-Fitness-->
+
+      <!-- banner-Fitness-->
       <section id="home-fitness-banner" class="section-banner"></section>
 
       <!-- home-Fitness -->
@@ -212,7 +190,9 @@
           </div>
         </div>
       </section>
-      <!-- parallax-Wellness -->
+
+      <!-- banner-Wellness -->
+
       <section id="home-wellness-banner" class="section-banner"></section>
       <!-- home-Wellness -->
       <section id="home-wellness" class="text-center py-3">
@@ -282,7 +262,6 @@
               <p class="course-time-wrapper"><span class="course-time"><strong>Di</strong> 17:30 - 18:30</span><br><span class="course-time"><strong>Fr</strong> 17:30 - 18:30</span></p>
               <p class="content-description">
                 Traditionelles Taekwon-Do ist eine kontakt- und waffenlose Selbstverteidigung. Körper und Geist werden mit Selbstdisziplin, Geduld und Respekt anspruchsvoll trainiert. <!-- Formt positiv den Geist und den Körper. -->
-                <!-- Traditionelles Taekwondo ohne Körperkontakt. Ästhetik, Fitness, Körperbeherrschung im Vordergrund. Geignet für alle Altersgruppen unabhängig vom Alter. Trainiert Geist und Körper. -->
               </p>
               <a class="btn-external" href="https://taekwondo-mainz-city.de"><i class="fas fa-external-link-alt"></i> TWD Mainz-City</a>
             </div>
@@ -290,15 +269,16 @@
         </div>
       </section>
       
-      <!-- home-Studio -->
-      <section id="home-Studio" class="cases flex-grid py-3">
+      <!--
+      home-Studio - needs images
+      <section id="home-Studio" class="py-3">
         <div class="container">
-          <h2 class="section-title">Naš studio</h2>
-          <p class="section-subtitle">Naš studio podnaslov</p>
-
+          <h2 class="section-title">Studio Title</h2>
+          <p class="section-subtitle">Studio Subtitle</p>
         </div>
       </section>
-      
+      -->
+
       <!-- home-Team -->
       <section id="home-team" class="text-center py-3">
         <div class="container">
@@ -313,7 +293,7 @@
               <div class="img-border">
                 <img src="./img/team/hugo.jpg" alt="">
               </div>
-              <h3>Hugo Hofmann</h3>
+              <h3>Hugo <br> Hofmann</h3>
               <p>
                 <ul>
                   <li>Fitness-Center Mainz City Inhaber</li>
@@ -323,7 +303,7 @@
             </div>
             <div class="team-member">
               <img src="./img/team/erduan.jpg" alt="">
-              <h3>Erduan Dzafovic</h3>
+              <h3>Erduan <br> Dzafovic</h3>
               <p>
                 <ul>
                   <li>GETSAFEpro Inhaber</li>
@@ -333,7 +313,7 @@
             </div>
             <div class="team-member">
               <img src="./img/team/lena.jpg" alt="">
-              <h3>Lena Hofmann</h3>
+              <h3>Lena <br> Hofmann</h3>
               <p>
                 <ul>
                   <li>Taekwondo Mainz City Inhaberin</li>
@@ -343,21 +323,21 @@
             </div>
             <div class="team-member">
               <img src="./img/team/annamarlen.jpg" alt="">
-              <h3>Anna-Marlen Sielemann</h3>
+              <h3>Anna-Marlen <br> Sielemann</h3>
               <p>
                 Physiotherapeutin
               </p>
             </div>
             <div class="team-member">
               <img src="./img/team/bianca.jpg" alt="">
-              <h3>Bianca Schneider</h3>
+              <h3>Bianca <br> Schneider</h3>
               <p>
                 Yoga Lehrerin
               </p>
             </div>
             <div class="team-member">
               <img src="./img/team/roswitha.jpg" alt="">
-              <h3>Roswitha Heid</h3>
+              <h3>Roswitha <br> Heid</h3>
               <p>
                 Sportlehrerin
               </p>
@@ -566,48 +546,10 @@
                 <p><span style="font-size: 1.5rem;">€ </span>30,-</p>
               </div>
             </div>
-            <div></div>
           </div>
-
-          </div>
-
-
-            <!-- <div class="price-grid">
-            <div class="time-frame-1">
-              <p>6 Monate</p>
-            </div>
-            <div class="time-frame-2">
-              <p>12 Monate</p>
-            </div>
-            <div class="user-group-1">
-              <p>Normaltarif</p>
-            </div>
-            <div class="user-group-2">
-              <p>Studenten / Azubis / Wehrdienstl. / Schuler / Senioren</p>
-            </div>
-            <div class="price-group">
-              <p>test</p>
-            </div>
-            <div class="price-group">
-              <p>test</p>
-            </div> -->
-
-
-          
         </div>
       </section>
-      <!--
-      home-Location
-      <section id="home-location" class="text-center py-4">
-        <div class="container">
-          <h2 class="section-title">
-            Kursplan
-          </h2>
-          <p class="section-subtitle">
-          </p>
-        </div>
-      </section>
-      -->    
+   
       <!-- contact info -->
       <section id="home-contact" class="py-3 bg-light">
         <div class="container">
@@ -618,20 +560,22 @@
             Kontaktieren Sie uns jetzt. Wir freuen uns über Ihre Nachricht!
           </p>
           <div class="contact-info">
+            <a href="tel:+496131231661">
+              <div>
+                <i class="fas fa-phone fa-5x py-1"></i>
+                <h3>Telefon</h3>
+                <p style="color:#e01983;">06131 / 23 16 61</p>
+              </div>
+            </a>
             <div>
               <i class="fas fa-envelope fa-5x py-1"></i>
               <h3>Email</h3>
-              <p><a href="emailto: info@fitness-center-mainz-city.de">info@fitness-center-mainz-city.de</a></p>
-            </div>
-            <div>
-              <a href="tel: +496131231661"><i class="fas fa-phone fa-5x py-1"></i></a>
-              <h3>Telefon</h3>
-              <p><a href="tel: +496131231661">06131 / 23 16 61</a></p>
+              <p><a href="mailto:info@fitness-center-mainz-city.de">info@fitness-center-mainz-city.de</a></p>
             </div>
             <div>
               <i class="fas fa-address-card fa-5x py-1"></i>
               <h3>Adresse</h3>
-              <p>Große Langgasse 3-5 • 55116 Mainz</p>
+              <p>Große Langgasse 3-5 &middot; 55116 Mainz</p>
             </div>
           </div>
         </div>
@@ -639,52 +583,37 @@
     </main>
 
     <!-- Footer -->
-    <footer id="main-footer">
+    <footer id="main-footer" class="py-3">
       <div class="footer-content container">
+        <div class="opened">
+          <ul>
+            <li><strong>Öffnungszeiten</strong></li>
+            <li>Montag bis Freitag: 07:30 - 21:30 Uhr</li>
+            <ul>
+              <li>Sauna: 11:00 - 14:00 und 17:00 - 21:00 Uhr</li>
+            </ul>
+            <li>Wochenende und Feiertags: 08:00 - 15:00 Uhr</li>
+            <li>Sauna: 11:00 - 14:00 Uhr</li>
+          </ul>
+        </div>
+
         <div class="info">
           <ul>
-            <li><b>Fitness-Center Mainz City</b></li>
-            <li>Große Langgase 3-5 • 55116 Mainz</li>
-            <li> </li>
+            <li><strong>Fitness-Center Mainz City</strong></li>
+            <li>Große Langgasse 3-5 &middot; 55116 Mainz</li>
+            <li class="placeholder"> </li>
             <li>Telefon: 06131 / 23 16 61</li>
             <li>Email: info@fitness-center-mainz-city.de</li>
             <li></li>
           </ul>
         </div>
         
-        <div class="opened">
-          <ul>
-            <li><b>Öffnungszeiten:</b></li>
-            <li>Montag bis Freitag: 07:30 - 21:30 Uhr</li>
-            <ul>
-              <li>Sauna: 11:00 - 14:00 und 17:00 - 21:00 Uhr</li>
-            </ul>
-            <li>Samstag, Sonntag und Feiertags: 08:00 - 15:00 Uhr</li>
-            <li>Sauna: 11:00 - 14:00 Uhr</li>
-          </ul>
-        </div>
-
         <div class="social">
-          <i class="fab fa-facebook fa-3x"></i>
+          <a class="social-media" href="https://www.facebook.com/pages/category/Gym-Physical-Fitness-Center/Fitness-Center-Mainz-City-HH-1222553277759986/" target="_blank">
+            <i class="fab fa-facebook fa-3x"></i>
+          </a> 
         </div>
       </div>
     </footer> 
-
-    <script>
-    $('#navbar ul li a').on('click', function(e){
-    if (this.hash !== ''){
-      e.preventDefault();
-
-      const hash = this.hash;
-
-      $('html, body').animate(
-        {
-          scrollTop: $(hash).offset().top - 48,
-        },
-        450
-      );
-    }
-  });
-    </script>
   </body>
 </html>
