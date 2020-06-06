@@ -907,7 +907,7 @@ img {
   #home-contact .contact-info p {
     font-size: 1rem; } }
 
-@media only screen and (max-device-height: 450px) {
+@media screen and (max-device-height: 450px) {
   .container {
     max-width: 600px;
     padding: 0 1rem;
