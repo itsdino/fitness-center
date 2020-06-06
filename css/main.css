@@ -1037,7 +1037,30 @@ img {
       padding-top: 1rem;
       text-align: center; } }
 
-@media screen and (max-height: 580px) {
+@media screen and (max-height: 580px) and (max-width: 759.98px) {
+  .section-banner {
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 100%; }
+  .course-time-wrapper {
+    text-align: left; }
+  .py-3 {
+    padding: 3rem 0; }
+  .section-title {
+    text-align: center;
+    font-size: 2rem; }
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.5rem; }
+  .content-title {
+    text-align: left;
+    font-size: 1.3rem; }
+  .content-description {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0; }
   #header-main {
     height: 100vh; }
     #header-main .header-wrapper {
@@ -1064,9 +1087,3 @@ img {
           width: 81vw; }
         #header-main .header-wrapper .header-content p {
           font-size: 5.04vw; } }
-
-@media (max-height: 330px) {
-  #header-home .header-content {
-    padding-top: 3rem; }
-    #header-home .header-content h1 {
-      font-size: 2rem; } }
