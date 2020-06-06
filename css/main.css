@@ -902,7 +902,7 @@ img {
   #home-contact .contact-info p {
     font-size: 1rem; } }
 
-@media screen and (max-width: 479.98px) {
+@media screen and (max-width: 760px) {
   .section-banner {
     background-attachment: scroll;
     background-position: center;
@@ -1037,9 +1037,33 @@ img {
       padding-top: 1rem;
       text-align: center; } }
 
-@media (max-height: 580px) {
-  #header-home .header-content {
-    padding-top: 3rem; } }
+@media screen and (max-height: 580px) {
+  #header-main {
+    height: 100vh; }
+    #header-main .header-wrapper {
+      margin-top: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; }
+      #header-main .header-wrapper .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 0 8% 0;
+        height: 100%;
+        width: 100%; }
+        #header-main .header-wrapper .header-content h1 {
+          text-align: center;
+          margin-top: 20vh;
+          font-size: 9vw;
+          line-height: 1; }
+        #header-main .header-wrapper .header-content .header-line {
+          height: 5px;
+          display: block;
+          margin: -4vh auto -1vh auto;
+          width: 81vw; }
+        #header-main .header-wrapper .header-content p {
+          font-size: 5.04vw; } }
 
 @media (max-height: 330px) {
   #header-home .header-content {

@@ -123,7 +123,7 @@ const menuItemHighlightHandler = () => {
 };
 
 // jquery smooth scroll to element
-$("#navbar ul li a").on("click", function (e) {
+$("#navbar ul li a, .site-link").on("click", function (e) {
   if (this.hash !== "") {
     e.preventDefault();
 
