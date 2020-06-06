@@ -1109,6 +1109,6 @@ img {
       padding-bottom: 1.7rem;
       grid-template-rows: 1fr; } }
 
-@media screen and (max-height: 325px) {
+@media screen and (max-height: 325px) and (max-width: 570px) {
   #home-prices .pricegrid {
     grid-template-columns: 1fr; } }
