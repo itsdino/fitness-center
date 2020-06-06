@@ -1037,7 +1037,7 @@ img {
       padding-top: 1rem;
       text-align: center; } }
 
-@media screen and (max-height: 580px) and (max-width: 759.98px) {
+@media screen and (max-height: 580px) {
   .section-banner {
     background-attachment: scroll;
     background-position: center;
