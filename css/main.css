@@ -1038,6 +1038,8 @@ img {
       text-align: center; } }
 
 @media screen and (max-height: 580px) {
+  html {
+    -webkit-text-size-adjust: 100%; }
   .section-banner {
     background-attachment: scroll;
     background-position: center;
