@@ -1025,14 +1025,11 @@ img {
       border: 2px solid #005a99;
       height: 135px;
       width: 135px; }
-  #home-prices .pricegrid {
-    grid-template-columns: 1fr;
-    grid-gap: 2.5rem;
-    margin-bottom: 1.8rem; }
   #main-footer .footer-content {
     align-items: flex-start;
     flex-direction: column; }
     #main-footer .footer-content .opened {
+      width: 100%;
       padding-bottom: 1rem;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
     #main-footer .footer-content .info {
@@ -1047,7 +1044,7 @@ img {
       padding-top: 1rem;
       text-align: center; } }
 
-@media screen and (max-height: 580px) and (max-width: 1000px) {
+@media screen and (max-height: 450px) {
   .container {
     max-width: 600px;
     padding: 0 1rem;
@@ -1104,7 +1101,7 @@ img {
           font-size: 5.04vw; }
   #home-prices .pricegrid {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1.5rem;
+    grid-gap: 3.2rem 1.5rem;
     margin-bottom: 1.1rem; }
     #home-prices .pricegrid #grid-placeholder {
       display: none; }
