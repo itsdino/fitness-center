@@ -1152,9 +1152,12 @@ img {
         width: 100%; }
         #header-main .header-wrapper .header-content h1 {
           margin-top: 26%;
-          text-align: center;
+          text-align: left;
           font-size: 5rem;
           line-height: 0.9; }
+          #header-main .header-wrapper .header-content h1 #fit-keyword {
+            color: #e01983;
+            font-size: 5.65rem; }
         #header-main .header-wrapper .header-content .header-line {
           display: none; }
         #header-main .header-wrapper .header-content p {
