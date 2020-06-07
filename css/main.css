@@ -249,8 +249,7 @@
 
 .btn-cta {
   color: #fff;
-  background-color: #e01983;
-  margin-top: 1rem; }
+  background-color: #e01983; }
 
 .btn-external {
   margin-top: 0.5rem;
@@ -937,12 +936,14 @@ img {
     text-align: left;
     margin-bottom: 0; }
   #header-main {
-    height: 100vh; }
+    height: 100vh;
+    min-height: 360px; }
     #header-main .header-wrapper {
       margin-top: 0;
       justify-content: center;
       align-items: center;
-      height: 100vh; }
+      height: 100vh;
+      min-height: 360px; }
       #header-main .header-wrapper .header-content {
         display: flex;
         flex-direction: column;
@@ -951,19 +952,19 @@ img {
         height: 100%;
         width: 100%; }
         #header-main .header-wrapper .header-content h1 {
+          margin-top: 20%;
           text-align: center;
-          margin-top: 20vh;
           font-size: 3.5rem;
           line-height: 1; }
         #header-main .header-wrapper .header-content .header-line {
           height: 5px;
           display: block;
-          margin: -3.5rem auto -2.2rem auto;
-          width: 79%; }
+          width: auto;
+          margin: -2rem 10% -1rem 10%; }
         #header-main .header-wrapper .header-content p {
           font-size: 1.83rem; }
         #header-main .header-wrapper .header-content .btn-cta {
-          margin: 0 15%; }
+          margin: 0 15% 0 15%; }
   #home-features .specials,
   #home-fitness .specials,
   #home-wellness .specials,
@@ -1058,17 +1059,19 @@ img {
         height: 100%;
         width: 100%; }
         #header-main .header-wrapper .header-content h1 {
+          margin-top: 20%;
           text-align: center;
-          margin-top: 23vh;
-          font-size: 3.45rem;
+          font-size: 3rem;
           line-height: 1; }
         #header-main .header-wrapper .header-content .header-line {
           height: 5px;
           display: block;
-          margin: -4vh auto 1vh auto;
-          width: 86.5%; }
+          width: auto;
+          margin: -2rem 10% -1rem 10%; }
         #header-main .header-wrapper .header-content p {
-          font-size: 1.8rem; }
+          font-size: 1.65rem; }
+        #header-main .header-wrapper .header-content .btn-cta {
+          margin: 0 15% 2% 15%; }
   #home-team .specials {
     grid-template-columns: repeat(2, 1fr); }
   #home-prices .pricegrid {
@@ -1124,6 +1127,7 @@ img {
         #header-main .header-wrapper .header-content .header-line {
           display: none; }
         #header-main .header-wrapper .header-content p {
+          color: transparent;
           font-size: 1.3rem; }
   #home-features .specials,
   #home-fitness .specials,
