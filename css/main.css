@@ -807,7 +807,7 @@ img {
     border-radius: 25px; }
     #home-team .specials .team-member img {
       border-radius: 50%;
-      border: 10px solid #005a99;
+      border: 2px solid #005a99;
       height: 150px;
       width: 150px; }
 
@@ -1044,6 +1044,34 @@ img {
       text-align: center; } }
 
 @media screen and (max-height: 325px) {
+  .container {
+    max-width: 600px;
+    padding: 0 1rem;
+    margin: auto;
+    overflow: hidden; }
+  .section-banner {
+    background-attachment: scroll;
+    background-position: top;
+    background-size: cover;
+    height: 15rem;
+    width: 100%; }
+  .course-time-wrapper {
+    text-align: left; }
+  .py-3 {
+    padding: 3rem 0; }
+  .section-title {
+    text-align: center;
+    font-size: 2rem; }
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.5rem; }
+  .content-title {
+    text-align: left;
+    font-size: 1.3rem; }
+  .content-description {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0; }
   #header-main {
     height: 100vh; }
     #header-main .header-wrapper {
@@ -1079,10 +1107,13 @@ img {
 
 @media screen and (max-width: 430px) and (max-height: 900px) {
   .container {
-    padding: 0 1rem; }
+    max-width: 600px;
+    padding: 0 1rem;
+    margin: auto;
+    overflow: hidden; }
   .section-banner {
     background-attachment: scroll;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     height: 15rem;
     width: 100%; }
@@ -1116,19 +1147,19 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 0 0 30% 0;
+        padding: 0 0 26% 0;
         height: 100%;
         width: 100%; }
         #header-main .header-wrapper .header-content h1 {
           margin-top: 26%;
-          text-align: left;
-          font-size: 4rem;
-          line-height: 1; }
+          text-align: center;
+          font-size: 5rem;
+          line-height: 0.9; }
         #header-main .header-wrapper .header-content .header-line {
           display: none; }
         #header-main .header-wrapper .header-content p {
           color: transparent;
-          font-size: 1.3rem; }
+          font-size: 0.1rem; }
   #home-features .specials,
   #home-fitness .specials,
   #home-wellness .specials,
