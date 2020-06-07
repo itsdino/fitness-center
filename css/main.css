@@ -249,6 +249,7 @@
 
 .btn-cta {
   color: #fff;
+  margin-top: 1rem;
   background-color: #e01983; }
 
 .btn-external {
@@ -865,6 +866,182 @@ img {
           border-color: #fff;
           background: #fff; }
 
+@media screen and (max-width: 983px) {
+  #header-main .header-wrapper .header-content h1 {
+    font-size: 5rem; }
+  #header-main .header-wrapper .header-content .header-line {
+    width: 42.5rem; }
+  #header-main .header-wrapper .header-content p {
+    font-size: 2.64rem; } }
+
+@media screen and (max-width: 767px) {
+  #home-features .specials,
+  #home-fitness .specials,
+  #home-wellness .specials,
+  #home-selfdefense .specials,
+  #home-contact .contact-info,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    padding: 0; }
+    #home-features .specials div,
+    #home-fitness .specials div,
+    #home-wellness .specials div,
+    #home-selfdefense .specials div,
+    #home-contact .contact-info div,
+    #about-d .testimonials div,
+    #contact-b .contact-info div,
+    .items div {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0;
+      margin-bottom: 0; }
+    #home-features .specials div:last-child,
+    #home-fitness .specials div:last-child,
+    #home-wellness .specials div:last-child,
+    #home-selfdefense .specials div:last-child,
+    #home-contact .contact-info div:last-child,
+    #about-d .testimonials div:last-child,
+    #contact-b .contact-info div:last-child,
+    .items div:last-child {
+      border-bottom: none; }
+  #home-features .specials {
+    grid-gap: 1.5rem; }
+    #home-features .specials div {
+      border-radius: 25px; }
+      #home-features .specials div:hover {
+        transform: none; }
+      #home-features .specials div p {
+        font-size: 1rem; }
+  #home-selfdefense .specials div {
+    position: relative;
+    padding-bottom: 5rem; }
+    #home-selfdefense .specials div .btn-external {
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      margin: 0 auto; }
+  #home-prices .pricegrid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.1rem;
+    margin-bottom: 1.8rem; }
+    #home-prices .pricegrid #grid-placeholder {
+      display: none; }
+    #home-prices .pricegrid:nth-of-type(4) {
+      grid-template-rows: 1fr;
+      padding-bottom: 1.7rem; }
+  #main-footer .footer-content {
+    grid-template-columns: 1fr;
+    grid-template-areas: "opened" "info" "social"; }
+    #main-footer .footer-content .opened {
+      width: 100%;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    #main-footer .footer-content .info {
+      width: 100%;
+      text-align: left;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      #main-footer .footer-content .info .placeholder {
+        display: none; }
+    #main-footer .footer-content .social {
+      display: block;
+      width: 100%;
+      padding-top: 1rem;
+      text-align: center; } }
+
+@media screen and (max-width: 650px) {
+  #home-features .specials,
+  #home-fitness .specials,
+  #home-wellness .specials,
+  #home-selfdefense .specials,
+  #home-contact .contact-info,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    padding: 0; }
+    #home-features .specials div,
+    #home-fitness .specials div,
+    #home-wellness .specials div,
+    #home-selfdefense .specials div,
+    #home-contact .contact-info div,
+    #about-d .testimonials div,
+    #contact-b .contact-info div,
+    .items div {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0;
+      margin-bottom: 0; }
+    #home-features .specials div:last-child,
+    #home-fitness .specials div:last-child,
+    #home-wellness .specials div:last-child,
+    #home-selfdefense .specials div:last-child,
+    #home-contact .contact-info div:last-child,
+    #about-d .testimonials div:last-child,
+    #contact-b .contact-info div:last-child,
+    .items div:last-child {
+      border-bottom: none; }
+  #home-features .specials {
+    grid-gap: 1.5rem; }
+    #home-features .specials div {
+      border-radius: 25px; }
+      #home-features .specials div:hover {
+        transform: none; }
+      #home-features .specials div p {
+        font-size: 1rem; }
+  #home-selfdefense .specials div {
+    position: relative;
+    padding-bottom: 5rem; }
+    #home-selfdefense .specials div .btn-external {
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      margin: 0 auto; }
+  #home-prices .pricegrid {
+    grid-template-columns: 1fr;
+    grid-gap: 3.1rem;
+    margin-bottom: 1.8rem; }
+    #home-prices .pricegrid #grid-placeholder {
+      display: none; }
+    #home-prices .pricegrid:nth-of-type(4) {
+      padding-bottom: 1.7rem; }
+  #home-team .specials {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0; }
+    #home-team .specials .team-member img {
+      border: 2px solid #005a99;
+      height: 135px;
+      width: 135px; }
+  #main-footer .footer-content {
+    grid-template-columns: 1fr;
+    grid-template-areas: "opened" "info" "social"; }
+    #main-footer .footer-content .opened {
+      width: 100%;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    #main-footer .footer-content .info {
+      width: 100%;
+      text-align: left;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      #main-footer .footer-content .info .placeholder {
+        display: none; }
+    #main-footer .footer-content .social {
+      display: block;
+      width: 100%;
+      padding-top: 1rem;
+      text-align: center; }
+  #home-team .specials {
+    grid-template-columns: repeat(2, 1fr); }
+  #home-prices .pricegrid {
+    grid-template-columns: repeat(1, 1fr); } }
+
 @media screen and (max-width: 1025px) and (min-height: 767px) {
   .section-banner {
     background-attachment: scroll;
@@ -906,7 +1083,7 @@ img {
   #home-contact .contact-info p {
     font-size: 1rem; } }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) and (-webkit-device-pixel-ratio: 2) {
   .container {
     max-width: 600px;
     padding: 0 1rem;
@@ -1043,7 +1220,144 @@ img {
       padding-top: 1rem;
       text-align: center; } }
 
-@media screen and (max-height: 325px) {
+@media screen and (max-height: 450px) and (-webkit-device-pixel-ratio: 3) {
+  .container {
+    max-width: 600px;
+    padding: 0 1rem;
+    margin: auto;
+    overflow: hidden; }
+  .section-banner {
+    background-attachment: scroll;
+    background-position: top;
+    background-size: cover;
+    height: 15rem;
+    width: 100%; }
+  .course-time-wrapper {
+    text-align: left; }
+  .py-3 {
+    padding: 3rem 0; }
+  .section-title {
+    text-align: center;
+    font-size: 2rem; }
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.5rem; }
+  .content-title {
+    text-align: left;
+    font-size: 1.3rem; }
+  .content-description {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0; }
+  #header-main {
+    height: 100vh;
+    min-height: 360px; }
+    #header-main .header-wrapper {
+      margin-top: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      min-height: 360px; }
+      #header-main .header-wrapper .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 0 8% 0;
+        height: 100%;
+        width: 100%; }
+        #header-main .header-wrapper .header-content h1 {
+          margin-top: 20%;
+          text-align: center;
+          font-size: 3.5rem;
+          line-height: 1; }
+        #header-main .header-wrapper .header-content .header-line {
+          height: 5px;
+          display: block;
+          width: auto;
+          margin: -2rem 10% -1rem 10%; }
+        #header-main .header-wrapper .header-content p {
+          font-size: 1.83rem; }
+        #header-main .header-wrapper .header-content .btn-cta {
+          margin: 0 15% 0 15%; }
+  #home-features .specials,
+  #home-fitness .specials,
+  #home-wellness .specials,
+  #home-selfdefense .specials,
+  #home-contact .contact-info,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    padding: 0; }
+    #home-features .specials div,
+    #home-fitness .specials div,
+    #home-wellness .specials div,
+    #home-selfdefense .specials div,
+    #home-contact .contact-info div,
+    #about-d .testimonials div,
+    #contact-b .contact-info div,
+    .items div {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0;
+      margin-bottom: 0; }
+    #home-features .specials div:last-child,
+    #home-fitness .specials div:last-child,
+    #home-wellness .specials div:last-child,
+    #home-selfdefense .specials div:last-child,
+    #home-contact .contact-info div:last-child,
+    #about-d .testimonials div:last-child,
+    #contact-b .contact-info div:last-child,
+    .items div:last-child {
+      border-bottom: none; }
+  #home-features .specials {
+    grid-gap: 1.5rem; }
+    #home-features .specials div {
+      border-radius: 25px; }
+      #home-features .specials div:hover {
+        transform: none; }
+      #home-features .specials div p {
+        font-size: 1rem; }
+  #home-selfdefense .specials div {
+    position: relative;
+    padding-bottom: 5rem; }
+    #home-selfdefense .specials div .btn-external {
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      margin: 0 auto; }
+  #home-prices .pricegrid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.1rem;
+    margin-bottom: 1.8rem; }
+    #home-prices .pricegrid #grid-placeholder {
+      display: none; }
+    #home-prices .pricegrid:nth-of-type(4) {
+      grid-template-rows: 1fr;
+      padding-bottom: 1.7rem; }
+  #main-footer .footer-content {
+    grid-template-columns: 1fr;
+    grid-template-areas: "opened" "info" "social"; }
+    #main-footer .footer-content .opened {
+      width: 100%;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    #main-footer .footer-content .info {
+      width: 100%;
+      text-align: left;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      #main-footer .footer-content .info .placeholder {
+        display: none; }
+    #main-footer .footer-content .social {
+      display: block;
+      width: 100%;
+      padding-top: 1rem;
+      text-align: center; } }
+
+@media screen and (max-height: 325px) and (-webkit-device-pixel-ratio: 2) {
   .container {
     max-width: 600px;
     padding: 0 1rem;
@@ -1157,12 +1471,15 @@ img {
           line-height: 0.9; }
           #header-main .header-wrapper .header-content h1 #fit-keyword {
             color: #e01983;
-            font-size: 5.65rem; }
+            font-size: 5.65rem;
+            display: block; }
         #header-main .header-wrapper .header-content .header-line {
           display: none; }
         #header-main .header-wrapper .header-content p {
           color: transparent;
           font-size: 0.1rem; }
+        #header-main .header-wrapper .header-content .btn-cta {
+          margin-top: 0; }
   #home-features .specials,
   #home-fitness .specials,
   #home-wellness .specials,
