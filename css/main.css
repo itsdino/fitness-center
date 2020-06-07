@@ -953,15 +953,17 @@ img {
         #header-main .header-wrapper .header-content h1 {
           text-align: center;
           margin-top: 20vh;
-          font-size: 3.86rem;
+          font-size: 3.5rem;
           line-height: 1; }
         #header-main .header-wrapper .header-content .header-line {
           height: 5px;
           display: block;
           margin: -3.5rem auto -2.2rem auto;
-          width: 87.5%; }
+          width: 79%; }
         #header-main .header-wrapper .header-content p {
-          font-size: 2.035rem; }
+          font-size: 1.83rem; }
+        #header-main .header-wrapper .header-content .btn-cta {
+          margin: 0 15%; }
   #home-features .specials,
   #home-fitness .specials,
   #home-wellness .specials,
