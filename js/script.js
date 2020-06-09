@@ -8,9 +8,12 @@ window.onload = () => {
   window.requestAnimationFrame(updateLax);
 };
 
+// scroll to top button
+const scrollTopBtn = document.getElementById("back-to-top");
+
 // for mobile navbar
-const menuItems = document.querySelectorAll(".menu-item");
-const menuBtn = document.getElementById("menu-btn");
+const menuItemsConst = document.querySelectorAll(".menu-item");
+const menuBtnConst = document.getElementById("menu-btn");
 
 // for desktop navbar
 const navBarConst = document.getElementById("navbar");
@@ -18,24 +21,40 @@ const logoConst = document.querySelector(".logo");
 const menuLinksConst = document.querySelectorAll("#navbar ul li a");
 let menuLinksLength = menuLinksConst.length;
 
+// scroll to top button
+
+const scrollToTopButtonHandler = () => {
+  let scrollPosition = window.scrollY;
+  if (scrollPosition > 1000) {
+    scrollTopBtn.classList.remove("hidden");
+  } else {
+    scrollTopBtn.classList.add("hidden");
+  }
+  console.log("hello world");
+};
+
 // mobile
 // ------
+
 // closes mobile menu on item select
-for (let i = 0; i < menuItems.length; i++) {
-  menuItems[i].addEventListener("click", () => {
+for (let i = 0; i < menuItemsConst.length; i++) {
+  menuItemsConst[i].addEventListener("click", () => {
     setTimeout(uncheckHamburger, 150);
   });
 }
 
-var uncheckHamburger = () => {
-  menuBtn.checked = false;
+const uncheckHamburger = () => {
+  menuBtnConst.checked = false;
 };
 
 // desktop
 // -------
+
+// runs functions on scroll
 window.onscroll = () => {
   navBarSizeHandler();
   menuItemHighlightHandler();
+  scrollToTopButtonHandler();
 };
 
 let scrolled = false;
@@ -49,89 +68,80 @@ const navBarSizeHandler = () => {
     heroNavbar();
     scrolled = false;
   }
-  console.log("navbarsizehandler");
 };
 
-// shrinks desktop navbar, adds shadow
+// shrinks desktop navbar
 const shrinkNavbar = () => {
   navBarConst.classList.remove("top");
   logoConst.classList.add("shrinked");
   for (let i = 0; i < menuLinksLength; i++) {
     menuLinksConst[i].classList.add("shrinked");
   }
-  console.log("shrink");
 };
 
-// resets default hero navbar, no shadow
+// resets back to hero navbar
 const heroNavbar = () => {
   navBarConst.classList.add("top");
   logoConst.classList.remove("shrinked");
   for (let i = 0; i < menuLinksLength; i++) {
     menuLinksConst[i].classList.remove("shrinked");
   }
-  console.log("hero");
 };
 
-// adds active class to menu item
+// -------
+
+// adds active class to menu item depending on scroll position
 const menuItemHighlightHandler = () => {
   let scrollPosition = window.scrollY;
   if (scrollPosition < 1329) {
-    let active = document.querySelector(".active");
-    if (active) {
-      active.classList.remove("active");
-    }
+    // Willkommen
+    getActiveMenuItem();
     menuLinksConst[0].classList.add("active");
   } else if (scrollPosition < 3156) {
-    let active = document.querySelector(".active");
-    if (active) {
-      active.classList.remove("active");
-    }
+    // Fitness
+    getActiveMenuItem();
     menuLinksConst[1].classList.add("active");
   } else if (scrollPosition < 3955) {
-    let active = document.querySelector(".active");
-    if (active) {
-      active.classList.remove("active");
-    }
+    // Wellness
+    getActiveMenuItem();
     menuLinksConst[2].classList.add("active");
   } else if (scrollPosition < 4887) {
-    let active = document.querySelector(".active");
-    if (active) {
-      active.classList.remove("active");
-    }
+    // Selbstverteidigung
+    getActiveMenuItem();
     menuLinksConst[3].classList.add("active");
   } else if (scrollPosition < 5777) {
-    let active = document.querySelector(".active");
-    if (active) {
-      active.classList.remove("active");
-    }
+    // Team
+    getActiveMenuItem();
     menuLinksConst[4].classList.add("active");
   } else {
-    let active = document.querySelector(".active");
-    if (active) {
-      active.classList.remove("active");
-    }
+    // Preise
+    getActiveMenuItem();
     menuLinksConst[5].classList.add("active");
   }
-  // contact menu item highlighter
+  // contact menu item highlighter fix so it works on all resolutions
   if (
     scrollPosition > 7715 ||
     window.innerHeight + scrollPosition >= document.body.offsetHeight - 2
   ) {
-    let active = document.querySelector(".active");
-    if (active) {
-      active.classList.remove("active");
-    }
+    // Kontakt
+    getActiveMenuItem();
     menuLinksConst[6].classList.add("active");
   }
 };
 
-// jquery smooth scroll to element
+// gets active menu item and removes active class
+const getActiveMenuItem = () => {
+  let active = document.querySelector(".active");
+  if (active) {
+    active.classList.remove("active");
+  }
+};
+
+// jQuery smooth scroll to element
 $("#navbar ul li a, .site-link").on("click", function (e) {
   if (this.hash !== "") {
     e.preventDefault();
-
     const hash = this.hash;
-
     $("html, body").animate(
       {
         scrollTop: $(hash).offset().top - 48,
