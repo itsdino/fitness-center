@@ -7,6 +7,8 @@ window.onload = () => {
   };
   window.requestAnimationFrame(updateLax);
 };
+// parallax header
+const headerImg = document.querySelector(".header-img");
 
 // scroll to top button
 const scrollTopBtn = document.getElementById("back-to-top");
@@ -21,6 +23,12 @@ const navBarConst = document.getElementById("navbar");
 const logoConst = document.querySelector(".logo");
 const menuLinksConst = document.querySelectorAll("#navbar ul li a");
 let menuLinksLength = menuLinksConst.length;
+
+// parallax header effect
+window.addEventListener("scroll", function (e) {
+  let scrolled = window.scrollY;
+  headerImg.style.top = scrolled * 0.2 + "px";
+});
 
 // scroll to top button show/hide
 const scrollToTopButtonHandler = () => {
