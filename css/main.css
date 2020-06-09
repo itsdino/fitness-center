@@ -26,6 +26,9 @@
 .text-left {
   text-align: left; }
 
+.text-right {
+  text-align: right; }
+
 .text-justify {
   text-align: justify; }
 
@@ -347,25 +350,36 @@
 
 .btn-top {
   text-align: center;
-  border: 5px solid #e01983;
+  height: 45px;
+  width: 45px;
+  background-color: #e01983;
+  border: inset 2px solid #e01983;
   border-radius: 50%;
-  height: 48px;
-  width: 48px;
-  padding: 0 0 0 0;
+  padding: 0;
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 98;
-  background-color: white; }
-  .btn-top i {
-    color: #e01983; }
+  display: none;
+  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15); }
+  .btn-top .arrow {
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+    margin: 17px auto;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg); }
   .btn-top.hidden {
     bottom: -60px; }
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn"]:hover {
-  background-color: #ff1f97; }
+  background-color: #ff1f97;
+  opacity: 1; }
   button[class^="btn-"]:hover i:before,
   a[class^="btn-"]:hover i:before,
   input[class^="btn"]:hover i:before {
@@ -782,14 +796,6 @@ img {
 #impressum {
   margin-top: 50px; }
 
-@media screen and (max-width: 1000px) {
-  #header-main .header-wrapper .header-content h1 {
-    font-size: 5rem; }
-  #header-main .header-wrapper .header-content .header-line {
-    width: 42.5rem; }
-  #header-main .header-wrapper .header-content p {
-    font-size: 2.64rem; } }
-
 @media screen and (max-width: 1202px) {
   #home-prices .pricegrid {
     grid-template-columns: 1fr 1fr;
@@ -801,9 +807,36 @@ img {
       grid-template-rows: 1fr;
       padding-bottom: 1.7rem; } }
 
+@media screen and (max-width: 1000px) {
+  #header-main .header-wrapper .header-content h1 {
+    font-size: 5rem; }
+  #header-main .header-wrapper .header-content .header-line {
+    width: 42.5rem; }
+  #header-main .header-wrapper .header-content p {
+    font-size: 2.64rem; }
+  #main-footer .footer-content {
+    grid-template-columns: 1fr;
+    grid-template-areas: "opened info" "social social"; } }
+
 @media screen and (max-width: 767px) {
   .section-title {
     font-size: 2.9rem; }
+  .btn-top {
+    display: block; }
+  #header-main .header-wrapper .header-content h1 {
+    text-align: left;
+    font-size: 5rem;
+    line-height: 1; }
+    #header-main .header-wrapper .header-content h1 #fit-keyword {
+      display: block;
+      font-size: 5.65rem;
+      color: #e01983; }
+  #header-main .header-wrapper .header-content .header-line {
+    display: none;
+    width: 25rem; }
+  #header-main .header-wrapper .header-content p {
+    display: none;
+    font-size: 1rem; }
   .course-time-wrapper {
     text-align: left; }
   .content-title {
@@ -987,6 +1020,8 @@ img {
     font-size: 1.3rem; }
   .content-description {
     font-size: 1rem; }
+  .btn-top {
+    display: block; }
   #home-features .specials {
     grid-gap: 0.7rem; }
     #home-features .specials div {
@@ -1011,7 +1046,10 @@ img {
   #home-contact .contact-info h3 {
     font-size: 1.3rem; }
   #home-contact .contact-info p {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  #main-footer .footer-content {
+    grid-template-columns: 1fr;
+    grid-template-areas: "opened info" "social social"; } }
 
 @media screen and (max-height: 450px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .container {
@@ -1345,4 +1383,6 @@ img {
       display: block;
       width: 100%;
       padding-top: 1rem;
-      text-align: center; } }
+      text-align: center; }
+  .btn-top {
+    display: block; } }

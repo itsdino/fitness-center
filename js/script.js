@@ -10,6 +10,7 @@ window.onload = () => {
 
 // scroll to top button
 const scrollTopBtn = document.getElementById("back-to-top");
+const footer = document.getElementById("main-footer");
 
 // for mobile navbar
 const menuItemsConst = document.querySelectorAll(".menu-item");
