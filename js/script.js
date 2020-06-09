@@ -22,8 +22,7 @@ const logoConst = document.querySelector(".logo");
 const menuLinksConst = document.querySelectorAll("#navbar ul li a");
 let menuLinksLength = menuLinksConst.length;
 
-// scroll to top button
-
+// scroll to top button show/hide
 const scrollToTopButtonHandler = () => {
   let scrollPosition = window.scrollY;
   if (scrollPosition > 1000) {
@@ -31,7 +30,6 @@ const scrollToTopButtonHandler = () => {
   } else {
     scrollTopBtn.classList.add("hidden");
   }
-  console.log("hello world");
 };
 
 // mobile
